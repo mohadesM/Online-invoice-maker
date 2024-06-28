@@ -1,0 +1,96 @@
+/* Import Google font - Poppins */
+@import "../../Files/font/fontvazir.css";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vazir;
+  direction: rtl;
+}
+body{
+  min-height: 100vh; /* ??? */
+  width: 100%;
+  background: #523a28;
+  background-image: linear-gradient(to left, #5da2d5 , #E9F1FA);
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);  /* ??? */
+  max-width:400px;
+  width: 90%;
+  background: #fff;
+  border-radius: 7px;
+  /* border: 1px solid #f3d250; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.container .registration{
+  display: none;
+}
+#check:checked ~ .registration{  
+  display: block;
+}
+#check:checked ~ .login{  
+  display: none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 35px;
+}
+.form header{
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.form input{
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  border: 1px solid #f78888;
+  border-radius: 6px;
+  outline: none;
+}
+.form input:focus{
+  color: #111439;
+  outline: 1px solid #f78888;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.form a{
+  font-size: 16px;
+  color: #5da2d5;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #fff;
+  background: #f78888;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: #f35c5c;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: #5da2d5;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}

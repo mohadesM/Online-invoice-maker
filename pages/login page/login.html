@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link rel="icon" href="../../Files/img/exixon.png" sizes="32x32">
+    <link rel="stylesheet" href="../../pages/login page/style.css">
+
+  </head>
+  <body>
+    <div class="container">
+    <input type="checkbox" id="check">   <!--  move between page login and sign up -->
+      <div class="login form">
+        <header>ورود</header>
+        <form action="#">
+          <input type="text" id="username_karbar" placeholder="ایمیل خود را وارد کنید" autofocus>
+          <input type="password" id="password_karbar" placeholder="رمز عبور خود را وارد کنید">
+          <a href="#">فراموشی رمز عبور؟</a>
+          <input type="button" class="button" value="ورود" onclick="login()">
+        </form>
+
+        <div class="signup">
+          <span class="Signup">اکانتی ندارید؟
+          <label for="check">ثبت نام</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>ثبت نام</header>
+        <form action="#">
+          <input type="text" placeholder="ایمیل"  id="username_karbar_signup">
+          <input type="password" placeholder="رمز عبور" id="password_karbar_signup">
+          <input type="password" placeholder="تکرار رمز عبور">
+          <input type="button" class="button" value="ثبت نام" onclick="signup()">
+        </form>
+        <div class="signup">
+          <span class="signup">قبلا ثبت نام کرده اید؟
+          <label for="check">ورود</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="../../pages/publicCode.js"></script>
+    <script src="../../pages/login page/loginCode.js"></script>
+  </body>
+</html>

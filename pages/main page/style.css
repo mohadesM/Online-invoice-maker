@@ -1,0 +1,175 @@
+@import "../../Files/font/fontvazir.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: vazir;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+::selection {
+  color: #fff;
+  background: #f35c5c;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image: linear-gradient(to left, #57a9e7, #90ccf4);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  color: white;
+}
+.navbar {
+  display: flex;
+  background-color: #111439;
+}
+.navbar a,
+span {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover,
+span:hover {
+  background-color: #f3d250;
+  color: #111439;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  transition: 0.4s;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 30%;
+  background-color: #ececec;
+  padding: 20px;
+}
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.fakeimg {
+  background-image: linear-gradient(to top, #ececec, #f3d250);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 120px;
+  /* position:relative; */
+  height: auto;
+  align-content: center;
+}
+.fakeimg2 {
+  background-image: linear-gradient(to left, #ececec, #f78888);
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg3 {
+  background-image: linear-gradient(to left, #fff, #90ccf4);
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+}
+.side img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding: 5px 4px 20px 4px;
+  border-radius: 10px;
+  display: block;
+}
+.footer {
+  padding: 20px;
+  color: #f3d250;
+  text-align: center;
+  background: #111439;
+}
+.footer div hr {
+  width: 40%;
+  margin: 0 30%;
+  opacity: 0.5;
+  background: #f3d250;
+}
+.footer i {
+  font-size: 20px;
+  color: #fff;
+  margin: 2px;
+}
+.footer i:hover {
+  color: #f78888;
+}
+@media (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+pre {
+  direction: rtl;
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  width: 200px;
+    
+  
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  position: absolute;
+  top: 101%;
+  left: 0px;
+  right: 0px;
+  width: 100px;
+  border: #111439 solid 2px;
+  padding: 0.5rem 0;
+  color: #212529;
+  text-align: right;
+  list-style: none;
+  background-color: #212529;
+  background-clip: padding-box;
+  border: 3px solid rgba(255, 244, 244, 0.15);
+
+  
+  min-width: 12rem;
+}
+.dropdown-menu > li {
+  padding: 5px;
+  list-style: none;
+  min-width: 100px;
+}
+
+.dropdown-menu > li:hover {
+    background: #f3d250;
+  }
+
+.dropdown:hover > .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-item {
+  display: block;
+  min-width: 100%;
+  padding: 0 !important;
+  /* z-index: 100; */
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
